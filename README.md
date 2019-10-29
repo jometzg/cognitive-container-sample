@@ -11,7 +11,7 @@ To allow customers a higher degree of control, some Cognitive services will be d
 
 This is currently a preview feature and there is a process where some developers can request access to an Azure Container Registry (ACR) that contains these preview Docker images.
 
-There is some documentatione [here](https://docs.microsoft.com/en-gb/azure/cognitive-services/speech-service/speech-container-howto) that shows you how to configure Congitive Services in a simple container.
+There is some documentation [here](https://docs.microsoft.com/en-gb/azure/cognitive-services/speech-service/speech-container-howto) that shows you how to configure Cognitive Services in a simple container.
 
 It should also be noted that to allow Microsoft to bill you for the use of these Cognitive Services, you need to configure the container with the URL and API key of an existing normal PaaS Cognitive Services account. It should be noted that this account will only be used for billing purposes - when clients of Cognitive Services are configured to call a container-based instance, then the cognitive requests will only go the the container, but your PaaS Cognitive Service will receive the billing requests.
 
