@@ -11,4 +11,22 @@ To allow customers a higher degree of control, some Cognitive services will be d
 
 This is currently a preview feature and there is a process where some developers can request access to an Azure Container Registry (ACR) that contains these preview Docker images.
 
+There is some documentatione [here](https://docs.microsoft.com/en-gb/azure/cognitive-services/speech-service/speech-container-howto) that shows you how to configure Congitive Services in a simple container.
+
+It should also be noted that to allow Microsoft to bill you for the use of these Cognitive Services, you need to configure the container with the URL and API key of an existing normal PaaS Cognitive Services account. It should be noted that this account will only be used for billing purposes - when clients of Cognitive Services are configured to call a container-based instance, then the cognitive requests will only go the the container, but your PaaS Cognitive Service will receive the billing requests.
+
+## Coding against the container-based version
+Fundamentally the coding model for the container-based version is identical to that of the existing SDKs. But the main change that needs to be made to the code is how the connection is made from the SDK to the container-based cognitive services. This is discussed in detail [here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-container-howto#query-the-containers-prediction-endpoint).
+
+In summary, the connection code must be changed from:
+```c#
+var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+```
+to use a container endpoint:
+```c#
+var config = SpeechConfig.FromEndpoint(
+    new Uri("ws://<container-ip-address>:5000/speech/recognition/dictation/cognitiveservices/v1"),
+    "YourSubscriptionKey");
+```
+
 
