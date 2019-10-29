@@ -34,4 +34,7 @@ This [sample](https://github.com/Azure-Samples/cognitive-services-speech-sdk/tre
 
 **It should be noted that this container does not support the [batch REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/batch-transcription) that my [cognitive-speech](https://github.com/jometzg/cognitive-speech) sample uses. Therefore this demonstation has to use the SDK rather than pure HTTP REST calls.**
 
+## The demonstration
+This section will detail what the demonstration will do in non-technical terms. This could be the same as the other cognitive speech demonstration, but a slightly different demonstration may be best.
 
+**Watch this space**
