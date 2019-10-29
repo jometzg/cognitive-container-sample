@@ -28,5 +28,10 @@ var config = SpeechConfig.FromEndpoint(
     new Uri("ws://<container-ip-address>:5000/speech/recognition/dictation/cognitiveservices/v1"),
     "YourSubscriptionKey");
 ```
+The starting point for any coding is best taken from the [Speech SDK](https://github.com/Azure-Samples/cognitive-services-speech-sdk)
+
+This [sample](https://github.com/Azure-Samples/cognitive-services-speech-sdk/tree/master/samples/csharp/dotnetcore/console) is the starting point for any test changes that can be made to point to a container-based Cognitive Services speech demonstration.
+
+** It should be notes that this container does not support the [batch REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/batch-transcription) that the *cognitive-speech* sample uses. Therefore this demonstation has to use the SDK rather than pure HTTP REST calls.**
 
 
