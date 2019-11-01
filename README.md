@@ -11,7 +11,7 @@ To allow customers a higher degree of control, some Cognitive services will be d
 
 ![alt text](https://github.com/jometzg/cognitive-container-sample/blob/master/cognitive-container.png "Cognitive Speech in a container")
 
-The above diagram shows a function app interacting with Cognitive Speech in a container. The function app takes some inbound audio either from an MP3 file and processes it so that the speech transcription service can perform the transcription. It should be noted that the batch API is not present, so the speech SDK needs to be used.
+The above diagram shows a function app interacting with Cognitive Speech in a container. The function app takes some inbound audio either from an MP3 file and processes it so that the speech transcription service can perform the transcription. This is just one sample configuration.
 
 This is currently a preview feature and there is a process where some developers can request access to an Azure Container Registry (ACR) that contains these preview Docker images.
 
