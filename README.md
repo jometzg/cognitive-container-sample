@@ -9,7 +9,7 @@ Some customers want to use Cognitive Services, but also want much tighter contro
 ## Cognitive Services in a Container
 To allow customers a higher degree of control, some Cognitive services will be deployable inside container technologies such as Azure Kubernetes Service (AKS) or Azure Container Instances (ACI). 
 
-![alt text](https://github.com/jometzg/cognitive-container-sample/blob/master/cognitive-container.png "Cognitive Speech in a container")
+![alt text](https://github.com/jometzg/cognitive-container-sample/blob/master/cognitive-container2.png "Cognitive Speech in a container")
 
 The above diagram shows a function app interacting with Cognitive Speech in a container. The function app takes some inbound audio either from an MP3 file and processes it so that the speech transcription service can perform the transcription. This is just one sample configuration.
 
